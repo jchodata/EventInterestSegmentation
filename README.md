@@ -43,24 +43,24 @@ Segments are derived from <code>events_target_year</code>:
 <h2>Program walk-through:</h2>
 
 <p align="center">
-Clone and install: <br/>
-<code>git clone &lt;your-repo-url&gt; && cd &lt;repo&gt; && pip install -r requirements.txt</code><br/>
+Download the files locally: <br/>
+<b>EventInterestSegmentation.py</b> and <b>event_model_sample.csv</b><br/>
 <br />
 <br />
-Set your CSV path in <code>train_event_model.py</code>:  <br/>
-<code>csv_file_path = r'path_to_your_data.csv'</code><br/>
+Install Python packages (Windows PowerShell or CMD): <br/>
+<code>pip install xgboost scikit-learn pandas numpy matplotlib openpyxl</code><br/>
 <br />
 <br />
-Run training: <br/>
-<code>python train_event_model.py</code><br/>
+Put both files in the same folder. Open <code>EventInterestSegmentation.py</code> and set:  <br/>
+<code>csv_file_path = r'event_model_sample.csv'</code><br/>
 <br />
 <br />
-Review feature importance:  <br/>
-<img src="feature_importance.png" height="80%" width="80%" alt="XGBoost Feature Importance"/>
+Run the script: <br/>
+<code>python EventInterestSegmentation.py</code><br/>
 <br />
 <br />
-Check outputs:  <br/>
-<b>constituent_segments.csv</b>, <b>constituent_segments.xlsx</b> (predicted segments) and <b>sample_weights_by_segment.csv</b> (diagnostics).
+Check outputs in the same folder:  <br/>
+<b>constituent_segments.csv</b>, <b>constituent_segments.xlsx</b>, and <b>feature_importance.png</b><br/>
 </p>
 
 <!--
