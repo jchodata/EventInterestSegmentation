@@ -185,4 +185,4 @@ if RUN_OPTUNA:
     study = optuna.create_study(direction='maximize')
     study.optimize(objective, n_trials=30)
     print('Best hyperparameters:', study.best_params)
-    print('Best accuracy:', study.best_value)
+    print('Best accuracy model:', study.best_value)
